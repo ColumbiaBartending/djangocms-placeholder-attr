@@ -16,10 +16,12 @@ from cms.templatetags.cms_tags import (
     PlaceholderOptions,
     _get_placeholder,
     get_site_id,
-    _get_cache_key,
-    _clean_key,
     restore_sekizai_context as _restore_sekizai,
     _get_page_by_untyped_arg,
+)
+from cms.cache import (
+    _get_cache_key,
+    _clean_key,
 )
 from cms.utils.placeholder import validate_placeholder_name
 
